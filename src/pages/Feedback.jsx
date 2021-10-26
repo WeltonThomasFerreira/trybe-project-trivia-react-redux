@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 class Feedback extends Component {
   render() {
     const three = 3;
-    const { avatar, name } = this.props;
+    const { avatar, name, history } = this.props;
     const { assertions, score } = JSON.parse(
       localStorage.getItem('state'),
     ).player;
@@ -23,9 +23,16 @@ class Feedback extends Component {
         Placar final:
         <div data-testid="feedback-total-score">{score}</div>
         Total de acertos:
-        <div data-testid="feedback-total-question">
-          {assertions}
-        </div>
+        <div data-testid="feedback-total-question">{assertions}</div>
+        <button
+          data-testid="btn-play-again"
+          type="button"
+          onClick={ () => {
+            history.push('/');
+          } }
+        >
+          Jogar novamente
+        </button>
       </div>
     );
   }
@@ -40,5 +47,6 @@ const mapStateToProps = (state) => ({
 Feedback.propTypes = {
   name: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
+  history: PropTypes.objectOf(PropTypes.any).isRequired,
 };
 export default connect(mapStateToProps)(Feedback);
