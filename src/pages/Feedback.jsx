@@ -18,7 +18,13 @@ class Feedback extends Component {
           <span data-testid="header-score">{score}</span>
         </header>
         <div data-testid="feedback-text">
-          {assertions >= three ? 'Mandou bem!' : 'Podia ser melhor...' }
+          {assertions >= three ? 'Mandou bem!' : 'Podia ser melhor...'}
+        </div>
+        Placar final:
+        <div data-testid="feedback-total-score">{score}</div>
+        Total de acertos:
+        <div data-testid="feedback-total-question">
+          {assertions}
         </div>
       </div>
     );
