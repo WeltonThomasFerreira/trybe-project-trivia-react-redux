@@ -3,6 +3,24 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 class Feedback extends Component {
+  constructor() {
+    super();
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(name, score, avatar) {
+    const { history } = this.props;
+    const exist = JSON.parse(localStorage.getItem('ranking')) || [];
+    const playerResult = {
+      name,
+      score,
+      picture: avatar,
+    };
+    exist.push(playerResult);
+    localStorage.setItem('ranking', JSON.stringify(exist));
+    history.push('/ranking');
+  }
+
   render() {
     const three = 3;
     const { avatar, name, history } = this.props;
@@ -36,9 +54,7 @@ class Feedback extends Component {
         <button
           data-testid="btn-ranking"
           type="button"
-          onClick={ () => {
-            history.push('/ranking');
-          } }
+          onClick={ () => this.handleClick(name, score, avatar) }
         >
           Ver Ranking
         </button>
@@ -51,7 +67,6 @@ const mapStateToProps = (state) => ({
   email: state.user.email,
   avatar: state.user.avatar,
   isGameReady: state.game.isGameReady,
-  playerScore: state.user.score,
 });
 Feedback.propTypes = {
   name: PropTypes.string.isRequired,
