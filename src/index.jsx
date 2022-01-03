@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './redux/store/store';
 import './index.css';
@@ -8,7 +8,7 @@ import App from './app/App';
 import * as serviceWorker from './utils/serviceWorker';
 
 ReactDOM.render(
-  <Router>
+  <Router basename="/trybe-project-trivia-react-redux">
     <Provider store={ store }>
       <App />
     </Provider>
