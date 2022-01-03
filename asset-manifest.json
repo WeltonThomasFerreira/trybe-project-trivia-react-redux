@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/trybe-project-trivia-react-redux/static/css/main.8472382b.chunk.css",
+    "main.js": "/trybe-project-trivia-react-redux/static/js/main.d0f256bc.chunk.js",
+    "main.js.map": "/trybe-project-trivia-react-redux/static/js/main.d0f256bc.chunk.js.map",
+    "runtime-main.js": "/trybe-project-trivia-react-redux/static/js/runtime-main.dd5c3c42.js",
+    "runtime-main.js.map": "/trybe-project-trivia-react-redux/static/js/runtime-main.dd5c3c42.js.map",
+    "static/js/2.78b2f304.chunk.js": "/trybe-project-trivia-react-redux/static/js/2.78b2f304.chunk.js",
+    "static/js/2.78b2f304.chunk.js.map": "/trybe-project-trivia-react-redux/static/js/2.78b2f304.chunk.js.map",
+    "index.html": "/trybe-project-trivia-react-redux/index.html",
+    "precache-manifest.bb2c748fe18de9f0ecd1356c7cbac695.js": "/trybe-project-trivia-react-redux/precache-manifest.bb2c748fe18de9f0ecd1356c7cbac695.js",
+    "service-worker.js": "/trybe-project-trivia-react-redux/service-worker.js",
+    "static/css/main.8472382b.chunk.css.map": "/trybe-project-trivia-react-redux/static/css/main.8472382b.chunk.css.map",
+    "static/js/2.78b2f304.chunk.js.LICENSE": "/trybe-project-trivia-react-redux/static/js/2.78b2f304.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dd5c3c42.js",
+    "static/js/2.78b2f304.chunk.js",
+    "static/css/main.8472382b.chunk.css",
+    "static/js/main.d0f256bc.chunk.js"
+  ]
+}
