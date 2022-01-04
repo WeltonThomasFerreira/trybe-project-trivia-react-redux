@@ -17,7 +17,7 @@
 - Criar actions assíncronas na sua aplicação React que faz uso de Redux.
 
 ## Desenvolvimento
-Um [jogo]() de perguntas e respostas baseado no jogo Trivia utilizando React e Redux, com as demandas definidas em um quadro Kanban. 
+Um [jogo](https://weltonthomasferreira.github.io/trybe-project-trivia-react-redux/#/) de perguntas e respostas baseado no jogo Trivia utilizando React e Redux, com as demandas definidas em um quadro Kanban. 
 
 ![Imagem do site desenvolvido](./readme/images/trivia-site.png "Site")
 
